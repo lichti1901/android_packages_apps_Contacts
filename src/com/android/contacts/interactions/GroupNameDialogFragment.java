@@ -42,7 +42,7 @@ public abstract class GroupNameDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme);
         final LayoutInflater layoutInflater = LayoutInflater.from(builder.getContext());
         final View view = layoutInflater.inflate(R.layout.group_name_dialog, null);
         final EditText editText = (EditText) view.findViewById(R.id.group_label);

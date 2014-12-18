@@ -30,6 +30,8 @@ import android.provider.ContactsContract.Intents.Insert;
 import android.telecom.PhoneAccount;
 import android.text.TextUtils;
 
+import com.android.contacts.R;
+
 /**
  * Activity that intercepts DIAL and VIEW intents for phone numbers for devices that can not
  * be used as a phone. This allows the user to see the phone number
@@ -68,7 +70,7 @@ public class NonPhoneActivity extends ContactsActivity {
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             final AlertDialog alertDialog;
-            alertDialog = new AlertDialog.Builder(getActivity(), R.style.NonPhoneDialogTheme)
+            alertDialog = new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme)
                     .create();
             alertDialog.setTitle(R.string.non_phone_caption);
             alertDialog.setMessage(getArgumentPhoneNumber());
