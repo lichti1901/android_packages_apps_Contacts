@@ -39,7 +39,7 @@ public class SplitContactConfirmationDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.splitConfirmation_title);
         builder.setIconAttribute(android.R.attr.alertDialogIcon);
         builder.setMessage(R.string.splitConfirmation);

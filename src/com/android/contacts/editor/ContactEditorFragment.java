@@ -1266,7 +1266,7 @@ public class ContactEditorFragment extends Fragment implements
 
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            AlertDialog dialog = new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme)
+            AlertDialog dialog = new AlertDialog.Builder(getActivity())
                     .setIconAttribute(android.R.attr.alertDialogIcon)
                     .setMessage(R.string.cancel_confirmation_dialog_message)
                     .setPositiveButton(android.R.string.ok,
@@ -1665,7 +1665,7 @@ public class ContactEditorFragment extends Fragment implements
 
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            return new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme)
+            return new AlertDialog.Builder(getActivity())
                     .setIconAttribute(android.R.attr.alertDialogIcon)
                     .setMessage(R.string.aggregation_suggestion_join_dialog_message)
                     .setPositiveButton(android.R.string.yes,
@@ -1713,7 +1713,7 @@ public class ContactEditorFragment extends Fragment implements
 
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            return new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme)
+            return new AlertDialog.Builder(getActivity())
                     .setIconAttribute(android.R.attr.alertDialogIcon)
                     .setMessage(R.string.aggregation_suggestion_edit_dialog_message)
                     .setPositiveButton(android.R.string.yes,
